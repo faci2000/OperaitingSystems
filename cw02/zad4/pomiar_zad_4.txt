@@ -1,0 +1,12 @@
+Total time using system functions:
+ real: 24.821918 system: 22.060000 user: 2.710000
+
+Total time using c libraries functions:
+ real: 1.048760 system: 0.030000 user: 1.000000
+
+Dla pewności wyników pomiarowych pomiar dokonałem 10-krotnie. Pomimo, iż
+struktura porgramów jest identyczna i różnią się jedynie funkcjami wykorzystywanymi
+do odczytu i zapisu plików, program wykorzystujący funkcje systemowe jest średnio 
+ 24 razy wolniejszy. To prowadzi nas do wniosku, że obsługa każdeog kolejnego 
+pliku przy pomocy funkcji systemowych znacznie wydłuża działanie programu. Prawdopodobnie
+wynika to z faktu, iż system przydziela mniej czasu na obłsuge funkcji systemowych.

@@ -1,0 +1,347 @@
+Podobnie jak w poprzednim przypadku testy zostały przeprowadzone jedynie dla największego zestawu plików.
+
+-O0
+
+Tests performed with static library
+
+some big and long files
+./main create_table 20 merge_files testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt testSamples/biglongA.txt:testSamples/biglongB.txt
+Total time of merges:
+ real: 17.187755 system: 2.610000 user: 14.480000
+Total time of block saves:
+ real: 11.193014 system: 1.150000 user: 10.010000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.380768 system: 3.760000 user: 24.490000
+
+some write remove
+Total time of merges:
+ real: 17.282685 system: 2.500000 user: 14.720000
+Total time of block saves:
+ real: 11.085915 system: 1.000000 user: 10.090000
+Total time of blocks deletions:
+ real: 0.000006 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.368606 system: 3.500000 user: 24.810000
+
+Tests performed with shared library
+
+some big and long files
+Total time of merges:
+ real: 17.180463 system: 2.700000 user: 14.460000
+Total time of block saves:
+ real: 11.108842 system: 1.000000 user: 10.070000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.289304 system: 3.700000 user: 24.530000
+
+some write remove
+Total time of merges:
+ real: 17.165872 system: 2.610000 user: 14.550000
+Total time of block saves:
+ real: 11.062151 system: 1.190000 user: 9.810000
+Total time of blocks deletions:
+ real: 0.000007 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.228030 system: 3.800000 user: 24.360000
+
+Tests performed with main_dynamic library
+
+some big and long files
+Total time of merges:
+ real: 17.200378 system: 2.650000 user: 14.490000
+Total time of block saves:
+ real: 11.148348 system: 1.160000 user: 9.930000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.348726 system: 3.810000 user: 24.420000
+
+some write remove
+Total time of merges:
+ real: 17.026100 system: 2.640000 user: 14.360000
+Total time of block saves:
+ real: 11.102531 system: 1.110000 user: 9.960000
+Total time of blocks deletions:
+ real: 0.000008 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.128639 system: 3.750000 user: 24.320000
+
+-O1
+
+Tests performed with static library
+
+some big and long files
+Total time of merges:
+ real: 17.105555 system: 2.390000 user: 14.690000
+Total time of block saves:
+ real: 11.161120 system: 1.150000 user: 9.960000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.266675 system: 3.540000 user: 24.650000
+
+some write remove
+Total time of merges:
+ real: 17.701443 system: 2.620000 user: 15.020000
+Total time of block saves:
+ real: 11.486585 system: 1.240000 user: 10.250000
+Total time of blocks deletions:
+ real: 0.000005 system: 0.000000 user: 0.000000
+Total time :
+ real: 29.188032 system: 3.860000 user: 25.270000
+
+Tests performed with shared library
+
+some big and long files
+Total time of merges:
+ real: 17.206605 system: 2.610000 user: 14.580000
+Total time of block saves:
+ real: 11.126008 system: 0.990000 user: 10.080000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.332614 system: 3.600000 user: 24.660000
+
+some write remove
+Total time of merges:
+ real: 17.196809 system: 2.480000 user: 14.670000
+Total time of block saves:
+ real: 11.206923 system: 1.040000 user: 10.120000
+Total time of blocks deletions:
+ real: 0.000006 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.403738 system: 3.520000 user: 24.790000
+
+Tests performed with main_dynamic library
+
+some big and long files
+Total time of merges:
+ real: 17.249322 system: 2.630000 user: 14.570000
+Total time of block saves:
+ real: 11.113815 system: 1.080000 user: 9.970000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.363137 system: 3.710000 user: 24.540000
+
+some write remove
+Total time of merges:
+ real: 17.344351 system: 2.650000 user: 14.660000
+Total time of block saves:
+ real: 11.144169 system: 1.060000 user: 10.030000
+Total time of blocks deletions:
+ real: 0.000007 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.488527 system: 3.710000 user: 24.690000
+
+-O2
+
+Tests performed with static library
+
+some big and long files
+Total time of merges:
+ real: 17.217501 system: 2.570000 user: 14.550000
+Total time of block saves:
+ real: 11.321473 system: 1.090000 user: 10.210000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.538975 system: 3.660000 user: 24.760000
+
+some write remove
+Total time of merges:
+ real: 17.143411 system: 2.620000 user: 14.440000
+Total time of block saves:
+ real: 11.111816 system: 1.050000 user: 10.070000
+Total time of blocks deletions:
+ real: 0.000005 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.255233 system: 3.670000 user: 24.510000
+
+Tests performed with shared library
+
+some big and long files
+Total time of merges:
+ real: 17.180033 system: 2.760000 user: 14.400000
+Total time of block saves:
+ real: 11.142314 system: 1.170000 user: 9.900000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.322347 system: 3.930000 user: 24.300000
+
+some write remove
+Total time of merges:
+ real: 17.188917 system: 2.470000 user: 14.630000
+Total time of block saves:
+ real: 11.155969 system: 1.250000 user: 9.870000
+Total time of blocks deletions:
+ real: 0.000007 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.344893 system: 3.720000 user: 24.500000
+
+Tests performed with main_dynamic library
+
+some big and long files
+Total time of merges:
+ real: 17.946395 system: 2.530000 user: 15.390000
+Total time of block saves:
+ real: 11.145570 system: 1.110000 user: 9.980000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 29.091965 system: 3.640000 user: 25.370000
+
+some write remove
+Total time of merges:
+ real: 17.928602 system: 2.440000 user: 15.420000
+Total time of block saves:
+ real: 11.380741 system: 1.100000 user: 10.230000
+Total time of blocks deletions:
+ real: 0.000008 system: 0.000000 user: 0.000000
+Total time :
+ real: 29.309351 system: 3.540000 user: 25.650000
+
+-O3
+
+Tests performed with static library
+
+some big and long files
+Total time of merges:
+ real: 17.502533 system: 2.580000 user: 14.910000
+Total time of block saves:
+ real: 11.720211 system: 1.080000 user: 10.580000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 29.222744 system: 3.660000 user: 25.490000
+
+some write remove
+Total time of merges:
+ real: 17.313253 system: 2.580000 user: 14.700000
+Total time of block saves:
+ real: 11.270945 system: 1.290000 user: 9.980000
+Total time of blocks deletions:
+ real: 0.000006 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.584204 system: 3.870000 user: 24.680000
+
+Tests performed with shared library
+
+some big and long files
+Total time of merges:
+ real: 17.850523 system: 2.630000 user: 15.160000
+Total time of block saves:
+ real: 11.302925 system: 1.070000 user: 10.230000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 29.153448 system: 3.700000 user: 25.390000
+
+some write remove
+Total time of merges:
+ real: 17.390931 system: 2.760000 user: 14.560000
+Total time of block saves:
+ real: 11.169021 system: 1.100000 user: 10.030000
+Total time of blocks deletions:
+ real: 0.000007 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.559959 system: 3.860000 user: 24.590000
+
+Tests performed with main_dynamic library
+
+some big and long files
+Total time of merges:
+ real: 17.104062 system: 2.570000 user: 14.530000
+Total time of block saves:
+ real: 11.091334 system: 1.080000 user: 9.970000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.195396 system: 3.650000 user: 24.500000
+
+some write remove
+Total time of merges:
+ real: 17.192843 system: 2.650000 user: 14.480000
+Total time of block saves:
+ real: 11.217462 system: 1.260000 user: 9.930000
+Total time of blocks deletions:
+ real: 0.000006 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.410311 system: 3.910000 user: 24.410000
+
+-Os
+
+Tests performed with static library
+
+some big and long files
+Total time of merges:
+ real: 17.206085 system: 2.580000 user: 14.610000
+Total time of block saves:
+ real: 11.257615 system: 1.120000 user: 10.090000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.463700 system: 3.700000 user: 24.700000
+
+some write remove
+Total time of merges:
+ real: 17.131422 system: 2.480000 user: 14.590000
+Total time of block saves:
+ real: 11.254357 system: 1.050000 user: 10.170000
+Total time of blocks deletions:
+ real: 0.000007 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.385786 system: 3.530000 user: 24.760000
+
+Tests performed with shared library
+
+some big and long files
+Total time of merges:
+ real: 17.219003 system: 2.730000 user: 14.400000
+Total time of block saves:
+ real: 11.187227 system: 1.080000 user: 10.070000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.406230 system: 3.810000 user: 24.470000
+
+some write remove
+Total time of merges:
+ real: 17.223972 system: 2.660000 user: 14.510000
+Total time of block saves:
+ real: 11.192685 system: 1.080000 user: 10.080000
+Total time of blocks deletions:
+ real: 0.000007 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.416664 system: 3.740000 user: 24.590000
+
+Tests performed with main_dynamic library
+
+some big and long files
+Total time of merges:
+ real: 17.252336 system: 2.400000 user: 14.790000
+Total time of block saves:
+ real: 11.100419 system: 1.070000 user: 10.030000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.352755 system: 3.470000 user: 24.820000
+
+some write remove
+Total time of merges:
+ real: 17.243440 system: 2.740000 user: 14.450000
+Total time of block saves:
+ real: 11.203008 system: 0.980000 user: 10.160000
+Total time of blocks deletions:
+ real: 0.000007 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.446455 system: 3.720000 user: 24.610000
+
+Wnioski: Zmiana optymalizacji przy kompilacji w niewielkiem stopniu wpłynęła na faktyczny czas działania.
+Jedynie w przypdku biblioteki dynaczmienej możemy zauważyć pewne odchylenia, mianowicie -O2 wpłyneła 
+negatywnie wywołujac czas ponad 29 s., natomiast przestawienie opcji na -O3 spowodowało ograniczenie czasu
+nawet o 1s względem -O2.

@@ -1,0 +1,33 @@
+Wyniki działania funkcji wykorzystującej fork, dla wszystkich 4 przypadków testowych.
+
+Testing ignore:
+
+Testing handler:
+Signal 10 recieved.
+Signal 10 recieved.
+
+Testing mask:
+
+Testing pending:
+Signal 10 is pending.
+Signal 10 is not pending.
+
+Na pierwszy rzut oka zarówno ignorowanie i maskowanie działa identycznie dla sygnałów, jednakże, w rzeczywistości maskowanie blokuje je,
+co umożliwia ich późniejszy odczyt. Co jest istotne maskowanie, ignorowanie i przechwytywanie jest dziedziczone proces potomne. Nie mniej jednak
+proces potomny wywołany polecneiem fork() nie dziedziczy sygnałów oczekujących. 
+
+Wyniki działania funkcji z wykorzystaniem exec(), dla wszystkich 4 przypadków testowych.
+
+Testing ignore:
+
+Testing mask:
+
+Testing pending:
+Signal 10 is pending.
+Signal 10 is pending.
+
+Testing handler:
+Signal 10 recieved.
+User defined signal 1
+
+Uzyskane wyniki wskazują, że proces wywołany funkcja exec dziedziczy maskę obsługi sygnałów, a także nieobsłużone sygnały.

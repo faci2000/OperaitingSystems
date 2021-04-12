@@ -1,0 +1,292 @@
+Objaśnienia:
+ilość plików    ilość lini      długość linii (wyrazy)
+few - 5         small - 5       short - ok. 8
+some - 20       medium - 1000   medium - 50
+a lot of - 100  big - 10 000    long - 500
+
+Few small and short files
+Total time of merges:
+ real: 0.000494 system: 0.000000 user: 0.000000
+Total time of block saves:
+ real: 0.000136 system: 0.000000 user: 0.000000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.000630 system: 0.000000 user: 0.000000
+
+Some small and short files
+Total time of merges:
+ real: 0.001676 system: 0.000000 user: 0.000000
+Total time of block saves:
+ real: 0.000464 system: 0.000000 user: 0.000000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.002139 system: 0.000000 user: 0.000000
+
+a lot of small and short files
+Total time of merges:
+ real: 0.007420 system: 0.000000 user: 0.000000
+Total time of block saves:
+ real: 0.001981 system: 0.000000 user: 0.000000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.009400 system: 0.000000 user: 0.000000
+
+few small and medium files
+Total time of merges:
+ real: 0.000642 system: 0.000000 user: 0.000000
+Total time of block saves:
+ real: 0.000255 system: 0.000000 user: 0.000000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.000897 system: 0.000000 user: 0.000000
+
+some small and medium files
+Total time of merges:
+ real: 0.002355 system: 0.000000 user: 0.000000
+Total time of block saves:
+ real: 0.000944 system: 0.000000 user: 0.000000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.003299 system: 0.000000 user: 0.000000
+
+a lot of small and medium files
+Total time of merges:
+ real: 0.011192 system: 0.000000 user: 0.000000
+Total time of block saves:
+ real: 0.004341 system: 0.010000 user: 0.000000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.015533 system: 0.010000 user: 0.000000
+
+few small and long files
+Total time of merges:
+ real: 0.002676 system: 0.000000 user: 0.000000
+Total time of block saves:
+ real: 0.001515 system: 0.000000 user: 0.000000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.004191 system: 0.000000 user: 0.000000
+
+some small and long files
+Total time of merges:
+ real: 0.010521 system: 0.000000 user: 0.000000
+Total time of block saves:
+ real: 0.006092 system: 0.000000 user: 0.010000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.016612 system: 0.000000 user: 0.010000
+
+a lot of small and long files
+Total time of merges:
+ real: 0.057119 system: 0.000000 user: 0.050000
+Total time of block saves:
+ real: 0.031964 system: 0.010000 user: 0.020000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.089083 system: 0.010000 user: 0.070000
+
+few medium and short files
+Total time of merges:
+ real: 0.008527 system: 0.000000 user: 0.000000
+Total time of block saves:
+ real: 0.005350 system: 0.000000 user: 0.000000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.013878 system: 0.000000 user: 0.000000
+
+some medium and short files
+Total time of merges:
+ real: 0.027501 system: 0.000000 user: 0.020000
+Total time of block saves:
+ real: 0.017572 system: 0.000000 user: 0.020000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.045074 system: 0.000000 user: 0.040000
+
+a lot of medium and short files
+Total time of merges:
+ real: 0.160082 system: 0.040000 user: 0.100000
+Total time of block saves:
+ real: 0.100448 system: 0.000000 user: 0.120000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.260530 system: 0.040000 user: 0.220000
+
+few medium and medium files
+Total time of merges:
+ real: 0.049825 system: 0.000000 user: 0.030000
+Total time of block saves:
+ real: 0.032268 system: 0.010000 user: 0.030000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.082093 system: 0.010000 user: 0.060000
+
+some medium and medium files
+Total time of merges:
+ real: 0.187403 system: 0.010000 user: 0.170000
+Total time of block saves:
+ real: 0.122162 system: 0.030000 user: 0.100000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.309564 system: 0.040000 user: 0.270000
+
+a lot of medium and medium files
+Total time of merges:
+ real: 0.965193 system: 0.200000 user: 0.730000
+Total time of block saves:
+ real: 0.616547 system: 0.070000 user: 0.570000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 1.581740 system: 0.270000 user: 1.300000
+
+few medium and long files
+Total time of merges:
+ real: 0.482080 system: 0.060000 user: 0.420000
+Total time of block saves:
+ real: 0.289024 system: 0.000000 user: 0.280000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.771104 system: 0.060000 user: 0.700000
+
+some medium and long files
+Total time of merges:
+ real: 1.857969 system: 0.240000 user: 1.600000
+Total time of block saves:
+ real: 1.176701 system: 0.090000 user: 1.090000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 3.034671 system: 0.330000 user: 2.690000
+
+a lot of medium and long files
+Total time of merges:
+ real: 9.152639 system: 1.580000 user: 7.560000
+Total time of block saves:
+ real: 5.833619 system: 0.520000 user: 5.310000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 14.986258 system: 2.100000 user: 12.870000
+
+few big and short files
+Total time of merges:
+ real: 0.067488 system: 0.000000 user: 0.050000
+Total time of block saves:
+ real: 0.043763 system: 0.000000 user: 0.050000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.111251 system: 0.000000 user: 0.100000
+
+some big and short files
+Total time of merges:
+ real: 0.283143 system: 0.040000 user: 0.190000
+Total time of block saves:
+ real: 0.178735 system: 0.020000 user: 0.200000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.461878 system: 0.060000 user: 0.390000
+
+a lot of big and short files
+
+Total time of merges:
+ real: 1.347746 system: 0.220000 user: 1.140000
+Total time of block saves:
+ real: 0.881794 system: 0.070000 user: 0.790000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 2.229540 system: 0.290000 user: 1.930000
+
+few big and medium files
+Total time of merges:
+ real: 0.489627 system: 0.060000 user: 0.420000
+Total time of block saves:
+ real: 0.300738 system: 0.030000 user: 0.270000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 0.790364 system: 0.090000 user: 0.690000
+
+some big and medium files
+Total time of merges:
+ real: 1.858616 system: 0.300000 user: 1.570000
+Total time of block saves:
+ real: 1.249528 system: 0.080000 user: 1.150000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 3.108144 system: 0.380000 user: 2.720000
+ 
+a lot of big and medium files
+Total time of merges:
+ real: 9.282801 system: 1.580000 user: 7.740000
+Total time of block saves:
+ real: 5.921643 system: 0.530000 user: 5.340000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 15.204444 system: 2.110000 user: 13.080000
+ 
+few big and long files
+Total time of merges:
+ real: 4.360493 system: 0.660000 user: 3.710000
+Total time of block saves:
+ real: 2.862279 system: 0.310000 user: 2.520000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 7.222772 system: 0.970000 user: 6.230000
+ 
+some big and long files
+Total time of merges:
+ real: 17.301436 system: 2.870000 user: 14.440000
+Total time of block saves:
+ real: 11.135514 system: 1.120000 user: 9.930000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.436950 system: 3.990000 user: 24.370000
+ 
+few write remove
+Total time of merges:
+ real: 4.335778 system: 0.640000 user: 3.680000
+Total time of block saves:
+ real: 2.802803 system: 0.220000 user: 2.580000
+Total time of blocks deletions:
+ real: 0.000001 system: 0.000000 user: 0.000000
+Total time :
+ real: 7.138583 system: 0.860000 user: 6.260000
+ 
+some write remove
+Total time of merges:
+ real: 17.359944 system: 2.580000 user: 14.740000
+Total time of block saves:
+ real: 11.072803 system: 1.010000 user: 10.040000
+Total time of blocks deletions:
+ real: 0.000005 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.432753 system: 3.590000 user: 24.780000
+
+Wnioski:
+Największy wpływ na czas działania programów ma długość linii, zatem można sądzić, że najbardziej obciążająca
+jest operacja zczytywania linii z pliku i przepisania jej w nowe miejsce. Sama alokacja i zapisanie do pamięci 
+nie zajmuje aż tyle czasu.
+Proces usuwania polegający na zwalnianiu pamięci praktycznie w znikomym stopniu wpływa na czas wykonania.

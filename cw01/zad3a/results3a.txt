@@ -1,0 +1,71 @@
+W celu sprawdzenia wpływu rodzaju biblioteki na czas wykonywania danych funkcji wziąłem tylko największe testy
+mergu, zapisu i usuniecia.
+
+Tests performed with static library
+
+some big and long files
+Total time of merges:
+ real: 17.308896 system: 2.470000 user: 14.830000
+Total time of block saves:
+ real: 11.062441 system: 1.060000 user: 9.970000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.371337 system: 3.530000 user: 24.800000
+
+some write remove
+Total time of merges:
+ real: 17.429885 system: 2.650000 user: 14.720000
+Total time of block saves:
+ real: 11.122257 system: 1.070000 user: 10.040000
+Total time of blocks deletions:
+ real: 0.000006 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.552148 system: 3.720000 user: 24.760000
+
+Tests performed with shared library
+
+some big and long files
+Total time of merges:
+ real: 17.118705 system: 2.700000 user: 14.450000
+Total time of block saves:
+ real: 11.198320 system: 0.950000 user: 10.170000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.317025 system: 3.650000 user: 24.620000
+
+some write remove
+Total time of merges:
+ real: 17.185700 system: 2.690000 user: 14.500000
+Total time of block saves:
+ real: 11.162750 system: 1.000000 user: 10.090000
+Total time of blocks deletions:
+ real: 0.000007 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.348458 system: 3.690000 user: 24.590000
+
+Tests performed with main_dynamic library
+
+some big and long files
+Total time of merges:
+ real: 17.108365 system: 2.690000 user: 14.400000
+Total time of block saves:
+ real: 11.094435 system: 1.140000 user: 9.900000
+Total time of blocks deletions:
+ real: 0.000000 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.202800 system: 3.830000 user: 24.300000
+
+some write remove
+Total time of merges:
+ real: 17.222771 system: 2.680000 user: 14.520000
+Total time of block saves:
+ real: 11.227865 system: 1.070000 user: 10.120000
+Total time of blocks deletions:
+ real: 0.000007 system: 0.000000 user: 0.000000
+Total time :
+ real: 28.450643 system: 3.750000 user: 24.640000
+
+Wnisoki: Rodzaj użytej biblioteki w marginalnym procencie wpływa na szykość wywoływanych z niej funkcji.
+Różnice są na poziomie błędu statystycznego.

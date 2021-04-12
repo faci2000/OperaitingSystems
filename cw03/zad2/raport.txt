@@ -1,0 +1,132 @@
+few small and short files
+Total time of merges:
+ real: 0.408081 system: 0.000000 user: 0.000000
+
+some small and short files
+Total time of merges:
+ real: 1.483340 system: 0.000000 user: 0.000000
+
+a lot of small and short files
+Total time of merges:
+ real: 7.440232 system: 0.010000 user: 0.040000
+
+few small and medium files
+Total time of merges:
+ real: 0.500400 system: 0.000000 user: 0.000000
+
+some small and medium files
+Total time of merges:
+ real: 1.600199 system: 0.000000 user: 0.000000
+
+a lot of small and medium files
+Total time of merges:
+ real: 7.423842 system: 0.010000 user: 0.040000
+
+few small and long files
+Total time of merges:
+ real: 0.409607 system: 0.000000 user: 0.000000
+
+some small and long files
+Total time of merges:
+ real: 1.485132 system: 0.000000 user: 0.000000
+
+a lot of small and long files
+Total time of merges:
+ real: 7.405473 system: 0.010000 user: 0.040000
+
+few medium and short files
+Total time of merges:
+ real: 0.425360 system: 0.000000 user: 0.000000
+
+some medium and short files
+Total time of merges:
+ real: 1.513210 system: 0.000000 user: 0.000000
+
+a lot of medium and short files
+Total time of merges:
+ real: 7.135409 system: 0.010000 user: 0.040000
+
+few medium and medium files
+Total time of merges:
+ real: 0.395739 system: 0.000000 user: 0.000000
+
+some medium and medium files
+Total time of merges:
+ real: 1.415441 system: 0.000000 user: 0.000000
+
+a lot of medium and medium files
+Total time of merges:
+ real: 7.241942 system: 0.010000 user: 0.040000
+
+few medium and long files
+Total time of merges:
+ real: 0.401728 system: 0.000000 user: 0.000000
+
+some medium and long files
+Total time of merges:
+ real: 1.427108 system: 0.000000 user: 0.000000
+
+a lot of medium and long files
+Total time of merges:
+ real: 7.096117 system: 0.010000 user: 0.040000
+
+few big and short files
+Total time of merges:
+ real: 0.379492 system: 0.000000 user: 0.000000
+
+some big and short files
+Total time of merges:
+ real: 1.449492 system: 0.000000 user: 0.000000
+
+a lot of big and short files
+Total time of merges:
+ real: 7.052133 system: 0.010000 user: 0.040000
+
+few big and medium files
+Total time of merges:
+ real: 0.378244 system: 0.000000 user: 0.000000
+
+some big and medium files
+Total time of merges:
+ real: 1.455227 system: 0.000000 user: 0.000000
+
+a lot of big and medium files
+Total time of merges:
+ real: 7.113400 system: 0.010000 user: 0.040000
+
+few big and long files
+Total time of merges:
+ real: 0.452758 system: 0.000000 user: 0.000000
+
+some big and long files
+Total time of merges:
+ real: 1.406365 system: 0.000000 user: 0.000000
+
+a lot of big and long files
+Total time of merges:
+ real: 7.025896 system: 0.010000 user: 0.040000
+
+Wnioski:
+Porównując czasy wykonania opercji merge'owani plików z wykorzystaniem procesów potomnych i z przeprowadzeniem 
+wszystkich operacji w procesie macierzystym można dojść do nastepujących wniosków:
+
+1) Czas wykonania programów przyjmujących długie pliki, a w szczególności przypadki przetwarzania wielu bardzo duzych
+plików, ich podział na procesy ma kluczowe znaczenie, pozwalajac znacząco przyspieszyc działanie programu. Dla przykładu
+przypadek testowy zawierający 20 par plików składających się z 500 wyrazów w linii oraz 10 000 takich linii wykonał się 
+w ciągu 1.4s podczas gdy jego odpowiednik korzystający z jednego procesu wykonywał się aż 17.3s, co przekłada sie na ponad
+10 krotny wzrost wydajności. Co ciekawe, przypadek testowy odpowiedzialny za merge 100 par plików składających się z 500 
+wyrazów w linii oraz 10 000 takich linii, wczesniej nie mógł się wykonać, natomiast obecnie wykonał się w czasie ok 7s.
+
+2) Czas wykonania programów wykorzystujących wiele krótkich plików jest znacznie dłuższy. Dla przykładu przypadek testowy
+zawierający 100 plików po 5 linii, ok. 8 wyrazów w linii wykonywał się w pierwszej wersji zaledwie 0.007420, natomiast
+z wykrzystaniem procesów potomnych do obsługi pojedynczych plików wydłużyło czas działania do ponad 7s. Jest to czas
+podobny do omawianego wczesniej przypadku, a zatem możemy dojść do konkluzji, że w przypadku, gdy czas tworzenia nowego 
+procesu przekracza czas potrzebny do jego wykonania, przełoży się to na spadek wydajności rozwiązania.
+
+3) Ilość plików do zmergowania decyduje o długości działania programu.
+
+3) Czas wykonania mergowania wielu plików, dla każdego rodzaju jest praktycznie identyczny, oznacza to, że przesadnie 
+duża ilośc procesów nie jest korzystna dla prostych zastosowań.
+
+4) Czas wykonania procesu oreaz jego potomków spadł praktycznie do zera zarówno w przypadku procesów wykonywanych w trybie
+użytkownika, jak i jądra.

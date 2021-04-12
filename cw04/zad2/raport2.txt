@@ -1,0 +1,18 @@
+Poza falgą SA_SIGINFO postanowiłem też przetestować działanie flag SA_RESETHAND i SA_NOCLDSTOP.
+
+SA_SIGINFO:
+Zbudowałem 3 parametrowy handler, który przechwytuje strukturę zawierająca, infomarcje przesyłane przez
+proces wysyłajacy sygnał. 
+
+Signal 10 recieved from process PID:6986.
+
+SA_RESETHAND:
+Rozpocząłem od utworzenia handlera dla syngału SIGCHILD i dwukrotnie wywołując proces potomny, a nastpęnie
+zatrzymując go sprawdziłem działanie flagi. Zgodnie z oczekiwaniami, pierwszy sygnał został przechwycony, 
+natomiast, drugi już nie.
+
+Signal 17 recieved.
+
+SA_NOCLDSTOP:
+Ponownie ustawiłem handler dla sygnału SIGCHILD i jeszcze raz stworzyłem proces potomny i zatrzymałem go. 
+Zgodnie z oczekiwanimi handler nie przechwycił syngału SIGCHILD wywołanego zatrzymaniem dziecka.
